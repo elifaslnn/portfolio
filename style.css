@@ -1,0 +1,51 @@
+body {
+  background-color: #252525;
+}
+
+#profilePhoto {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#demo {
+  text-align: center;
+  color: antiquewhite;
+  padding: 50px 0 50px;
+}
+.projectHeader {
+  color: antiquewhite;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 200px;
+}
+.cardsRow {
+  margin-bottom: 20px;
+}
+.card {
+  margin: 50px;
+}
+
+.home {
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  #profilePhoto {
+    max-width: 75%;
+    max-height: 75%;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .cardsRow {
+    margin-bottom: 0px;
+  }
+}
+
+/* @media screen and (max-width: 1139px) {
+  .cardsRow {
+    display: flex;
+  }
+} */
