@@ -19,12 +19,16 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/510edee830.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="navbar-brand" href="#">Elif Aslan</div>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,15 +43,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#projects"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#contect"
                 >Contect</a
               >
             </li>
@@ -56,7 +62,7 @@
       </div>
     </nav>
     <!-- HOME -->
-    <div class="row justify-content-center home">
+    <div class="row justify-content-center home" id="home">
       <div class="col-md-6" id="demo">
         Hi! <b>I'm Elif Aslan</b><br />
         I'm a computer engineering student <br />
@@ -68,7 +74,7 @@
     </div>
     <!-- CARDS -->
 
-    <div class="cards">
+    <div class="cards" id="projects">
       <div class="rowjustify-content-center projectHeader">
         <H>MY PROJECTS</H>
       </div>
@@ -76,23 +82,33 @@
         <div class="card" style="width: 18rem">
           <img src="img/todo.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">To-Do List</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A to-do list where you can jot down your tasks, written in
+              JavaScript.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a
+              href="https://github.com/elifaslnn/To-Do-List"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >Todo List</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <img src="img/fitLife.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Fit-Life</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a
+              href="https://github.com/elifaslnn/FitLife-Web-Application"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >FitLife</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -100,58 +116,91 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              It is a web application that facilitates communication between
+              users and coaches using a database connection. It allows coaches
+              to create customized plans for their clients.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <a
+              href="https://github.com/Meta-Land/MetaLand"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >MetaLand</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <img src="img/weather.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Weather App</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              It is an application written using an API. You can search for any
+              location and view the weather for your current location.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a
+              href="https://github.com/elifaslnn/WeatherApp"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >Weather App</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <img src="img/space.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Space Runing</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              The aim of this project is to develop a microcontroller-based
+              gaming machine using various sensors.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a
+              href="https://github.com/elifaslnn/space-runing"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >Space Runing</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="img/metaland.PNG" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">MetaLand</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              It is a game written in the C++ programming language. Players
+              start with a certain amount of health, money, and food; they can
+              work, and buy properties from the beginning.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a
+              href="https://github.com/Meta-Land/MetaLand"
+              target="_blank"
+              class="btn btn-primary cardBtn"
+              >MetaLand</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <div class="contect">
+    <div class="contect" id="contect">
       <div class="rowjustify-content-center projectHeader">
         <H>CONTECT ME</H>
       </div>
       <div class="col-6 contInfo">
-        Contect me<br />
         elfaslnvon@gmail.com<br />
-        0 553 573 5512<br />
-
-        Q Q Q Q
+        <div class="icons">
+          <a
+            href="https://www.linkedin.com/in/elif-aslan-a57201229/"
+            target="_blank"
+            class="fa-brands fa-linkedin"
+          >
+          </a>
+          <a
+            href="https://github.com/elifaslnn"
+            target="_blank"
+            class="fa-brands fa-github"
+          >
+          </a>
+        </div>
       </div>
     </div>
 
