@@ -1,24 +1,17 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./styles/main.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+const cvBtn = document.getElementById("cvBtn");
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+cvBtn?.addEventListener("click", function () {
+  console.log("cv");
+  var cvWindow = window.open();
+
+  if (!cvWindow) return;
+
+  const pdfFrame = document.createElement("iframe");
+
+  pdfFrame.src = "img/cv.pdf";
+  pdfFrame.style = "width: 100%; height: 100%";
+
+  cvWindow.document.body.appendChild(pdfFrame);
+});
