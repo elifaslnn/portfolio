@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,67 @@
     <title>portfolio</title>
   </head>
   <body>
-    <h1 class="text-4xl text-red-500">Tailwind OK</h1>
-
+    <header class="bg-amber-400">
+      <nav class="flex flex-row relative p-1 items-center">
+        <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <div
+          class="navMenu hidden absolute md:static left-0 top-full md:block w-full md:w-auto md:ml-auto md:shadow-none shadow-lg bg-amber-400 md:bg-transparent"
+        >
+          <ul
+            class="flex flex-col md:flex-row py-4 md:py-0 gap-4 md:gap-16 md:items-center p-4 md:p-2"
+          >
+            <li>
+              <a
+                class="hover:text-amber-700 transition-colors duration-200"
+                href="#home"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-amber-700 transition-colors duration-200"
+                href="#about"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-amber-700 transition-colors duration-200"
+                href="#project"
+                >PROJECT</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-amber-700 transition-colors duration-200"
+                href="#contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="md:hidden w-full">
+          <button class="menuBtn flex ml-auto right-0 m-1 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,6 +1,8 @@
 import "./styles/main.css";
 
 const cvBtn = document.getElementById("cvBtn");
+const menuBtn = document.querySelector(".menuBtn");
+const navMenuList = document.querySelector(".navMenu");
 
 cvBtn?.addEventListener("click", function () {
   console.log("cv");
@@ -14,4 +16,8 @@ cvBtn?.addEventListener("click", function () {
   pdfFrame.style = "width: 100%; height: 100%";
 
   cvWindow.document.body.appendChild(pdfFrame);
+});
+
+menuBtn?.addEventListener("click", () => {
+  navMenuList?.classList.toggle("hidden");
 });
