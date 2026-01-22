@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@import "./base.css";
-@import "./component.css";
-@import "./utilities.css";
-
 @theme {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Shadows Into Light", serif;
