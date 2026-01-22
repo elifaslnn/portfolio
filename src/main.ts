@@ -112,35 +112,35 @@ container?.append(
     title: "To Do List",
     description:
       "A to-do list being written in html, css and JavaScript. You can planning your day, taking noteslist the duty you will do for easily. Categorize your lists",
-    imgSrc: "/todo.png",
+    imgSrc: "todo.png",
     link: "https://github.com/elifaslnn/Lemon-Cake",
   }),
   ProjectCard({
     title: "Contact Form Mangement System",
     description:
       "This project is a Contact Form Management System developed using React.js for the frontend. The main purpose of the project is to allow users to submit contact messages and enable authorized users to manage, read, and analyze these messages through a secure and role-based system.",
-    imgSrc: "/cfms.png",
+    imgSrc: "cfms.png",
     link: "https://github.com/elifaslnn/-Contact-Form-Management-System",
   }),
   ProjectCard({
     title: "FitLife",
     description:
       "FitLife provides users with personalized workout programs, nutrition plans, progress tracking, messaging, and online training content to help them achieve their fitness goals. The system supports three different user roles: Admin, Trainer, and Client.",
-    imgSrc: "/fitLife.jpg",
+    imgSrc: "fitLife.jpg",
     link: "https://github.com/elifaslnn/FitLife-Web-Application",
   }),
   ProjectCard({
     title: "Seesaw Simulation",
     description:
       "This project is a mini web application where users can visually experience physics concepts such as torque, balance, and angle change by adding weights to a seesaw. The application stores the positions of the weights and the angle using localStorage, ensuring the state is preserved even when the page is refreshed.",
-    imgSrc: "/seesaw.png",
+    imgSrc: "seesaw.png",
     link: "https://elifaslnn.github.io/elif-aslan-seesaw/",
   }),
   ProjectCard({
     title: "Lemon Cake",
     description:
       "This project was developed as a practice exercise to improve skills in gesture handling, animations, layout measurement, state management, and audio integration within the React Native ecosystem. The player drags and drops various ingredients into a bowl to prepare a lemon cake. The project focuses on combining gestures and animations, which are commonly used in mobile game development.",
-    imgSrc: "/lemoncake.png",
+    imgSrc: "lemoncake.png",
     link: "https://github.com/elifaslnn/Lemon-Cake",
   }),
 );
