@@ -31,7 +31,7 @@ cvBtn?.addEventListener("click", () => {
         </style>
       </head>
       <body>
-        <iframe src="/cv.pdf"></iframe>
+        <iframe src="cv.pdf"></iframe>
       </body>
     </html>
   `);
