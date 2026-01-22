@@ -1,9 +1,1 @@
 /* Global stiller */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: system-ui, sans-serif;
-  background-color: bisque;
-}

@@ -8,3 +8,12 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Shadows Into Light", serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9f3e1;
+}

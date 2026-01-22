@@ -1,8 +1,11 @@
 import "./styles/main.css";
+import { ProjectCard } from "./components/projectCard";
 
 const cvBtn = document.getElementById("cvBtn");
 const menuBtn = document.querySelector(".menuBtn");
 const navMenuList = document.querySelector(".navMenu");
+
+const container = document.querySelector("#projectsGrid");
 
 cvBtn?.addEventListener("click", function () {
   console.log("cv");
@@ -43,7 +46,6 @@ const avatarController = {
     autoBtn: document.getElementById("autoBtn") as HTMLButtonElement,
   } as AvatarElements,
 
-  // Göz kırpma animasyonu
   blink(): void {
     if (this.isBlinking) return;
 
@@ -63,26 +65,6 @@ const avatarController = {
     }, 150);
   },
 
-  // Otomatik modu aç/kapat
-  toggleAuto(): void {
-    this.autoMode = !this.autoMode;
-
-    if (this.autoMode) {
-      this.elements.autoBtn.textContent = "🔄 Otomatik: Açık";
-      this.elements.autoBtn.classList.add("active");
-      this.scheduleNextBlink();
-    } else {
-      this.elements.autoBtn.textContent = "⏸️ Otomatik: Kapalı";
-      this.elements.autoBtn.classList.remove("active");
-
-      if (this.autoTimeoutId !== null) {
-        clearTimeout(this.autoTimeoutId);
-        this.autoTimeoutId = null;
-      }
-    }
-  },
-
-  // Bir sonraki göz kırpmayı planla
   scheduleNextBlink(): void {
     if (!this.autoMode) return;
 
@@ -94,18 +76,53 @@ const avatarController = {
     }, randomDelay);
   },
 
-  // Başlangıç
   init(): void {
     this.scheduleNextBlink();
   },
 };
 
-// Avatar'a tıklayınca göz kırp
 const avatar = document.getElementById("avatar") as HTMLElement | null;
 
 avatar?.addEventListener("click", () => {
   avatarController.blink();
 });
 
-// Sayfa yüklendiğinde başlat
 avatarController.init();
+
+container?.append(
+  ProjectCard({
+    title: "To Do List",
+    description:
+      "A to-do list being written in html, css and JavaScript. You can planning your day, taking noteslist the duty you will do for easily. Categorize your lists",
+    imgSrc: "./img/todo.png",
+    link: "https://github.com/elifaslnn/Lemon-Cake",
+  }),
+  ProjectCard({
+    title: "Contact Form Mangement System",
+    description:
+      "This project is a Contact Form Management System developed using React.js for the frontend. The main purpose of the project is to allow users to submit contact messages and enable authorized users to manage, read, and analyze these messages through a secure and role-based system.",
+    imgSrc: "./img/cfms.png",
+    link: "https://github.com/elifaslnn/-Contact-Form-Management-System",
+  }),
+  ProjectCard({
+    title: "FitLife",
+    description:
+      "FitLife provides users with personalized workout programs, nutrition plans, progress tracking, messaging, and online training content to help them achieve their fitness goals. The system supports three different user roles: Admin, Trainer, and Client.",
+    imgSrc: "./img/fitLife.jpg",
+    link: "https://github.com/elifaslnn/FitLife-Web-Application",
+  }),
+  ProjectCard({
+    title: "Seesaw Simulation",
+    description:
+      "This project is a mini web application where users can visually experience physics concepts such as torque, balance, and angle change by adding weights to a seesaw. The application stores the positions of the weights and the angle using localStorage, ensuring the state is preserved even when the page is refreshed.",
+    imgSrc: "./img/seesaw.png",
+    link: "https://elifaslnn.github.io/elif-aslan-seesaw/",
+  }),
+  ProjectCard({
+    title: "Lemon Cake",
+    description:
+      "This project was developed as a practice exercise to improve skills in gesture handling, animations, layout measurement, state management, and audio integration within the React Native ecosystem. The player drags and drops various ingredients into a bowl to prepare a lemon cake. The project focuses on combining gestures and animations, which are commonly used in mobile game development.",
+    imgSrc: "./img/lemoncake.png",
+    link: "https://github.com/elifaslnn/Lemon-Cake",
+  }),
+);
