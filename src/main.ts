@@ -39,9 +39,20 @@ cvBtn?.addEventListener("click", () => {
   win.document.close();
 });
 
-menuBtn?.addEventListener("click", () => {
-  navMenuList?.classList.toggle("hidden");
-});
+if (navMenuList && menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    navMenuList?.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", (e: MouseEvent) => {
+    if (
+      !navMenuList.contains(e.target as Node) &&
+      !menuBtn.contains(e.target as Node)
+    ) {
+      navMenuList.classList.add("hidden");
+    }
+  });
+}
 
 type AvatarElements = {
   leftEyeOpen: HTMLElement;
