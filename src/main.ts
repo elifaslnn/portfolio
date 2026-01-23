@@ -116,7 +116,7 @@ container?.append(
     link: "https://github.com/elifaslnn/Lemon-Cake",
   }),
   ProjectCard({
-    title: "Contact Form Mangement System",
+    title: "Contact Form Management System",
     description:
       "This project is a Contact Form Management System developed using React.js for the frontend. The main purpose of the project is to allow users to submit contact messages and enable authorized users to manage, read, and analyze these messages through a secure and role-based system.",
     imgSrc: "cfms.png",
